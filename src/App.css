@@ -1,0 +1,51 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #5b77b1;
+ height:80px;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin-bottom: 18px;
+}
+
+
+.bookContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 2em;
+}
+
+.bookContainer > div {
+  width: 33%;
+  flex-grow: 1;
+  text-align: left;
+  padding: 1em 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .bookContainer > div {
+    width: 50%;
+    flex-grow: 1;
+    text-align: left;
+    padding: 1em 0;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 300px) and (max-width: 765px) {
+  .bookContainer > div {
+    width: 100%;
+    flex-grow: 1;
+    text-align: left;
+    padding: 1em 0;
+  }
+}
